@@ -8,9 +8,9 @@ def update_quality(awards)
     when award.name == 'Blue First' && award.quality < 50 then award.quality += 1
     when award.name == 'Blue Compare'
       case
-        when award.expires_in > 10 && award.quality < 50 then award.quality += 1
-        when award.expires_in < 6 && award.quality < 50 then award.quality += 3
-        when award.expires_in < 11 && award.quality < 50 then award.quality += 2
+      when award.expires_in > 10 && award.quality < 50 then award.quality += 1
+      when award.expires_in < 6 && award.quality < 50 then award.quality += 3
+      when award.expires_in < 11 && award.quality < 50 then award.quality += 2
       end
     end
     case
